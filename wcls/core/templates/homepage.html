@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf8">
+<link rel="icon" href="data:">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+<body class="prose">
+
+<table>
+    <thead>
+        <th>Day</th>
+        <th>Hours</th>
+        <th>Title</th>
+        <th>Trainers</th>
+        <th>Club</th>
+    </thead>
+    <tbody>
+    {% for class in classes %}
+        <tr>
+            <td>{{ class.day }}</td>
+            <td>{{ class.hours }}</td>
+            <td>{{ class.title }}</td>
+            <td>{{ class.trainers }}</td>
+            <td>{{ class.club }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
