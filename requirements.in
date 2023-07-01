@@ -1,2 +1,5 @@
 Django
+cssselect
+lxml
 pip-tools
+requests
